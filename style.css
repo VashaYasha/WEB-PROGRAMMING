@@ -1,7 +1,4 @@
-/* ==========================================================================
-   RESET & CORE ESSENTIALS
-   ========================================================================== */
-* {
+ {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -31,9 +28,6 @@ body {
     font-size: 16px;
 }
 
-/* ==========================================================================
-   LAYOUT & CONTAINER
-   ========================================================================== */
 .container {
     max-width: 1100px;
     margin: 0 auto;
@@ -68,9 +62,6 @@ body {
     gap: 20px;
 }
 
-/* ==========================================================================
-   TYPOGRAPHY & TITLES
-   ========================================================================== */
 h1, h2, h3, h4 {
     color: var(--primary-color);
     line-height: 1.3;
@@ -98,10 +89,6 @@ h1, h2, h3, h4 {
     color: var(--accent-color);
     margin-right: 10px;
 }
-
-/* ==========================================================================
-   COMPONENTS: NAVBAR
-   ========================================================================== */
 .navbar {
     background-color: rgba(15, 23, 42, 0.95);
     backdrop-filter: blur(8px);
@@ -148,9 +135,6 @@ nav a:hover {
     color: var(--accent-color);
 }
 
-/* ==========================================================================
-   SECTION 1: PROFILE
-   ========================================================================== */
 .profile-section {
     padding: 100px 0 80px;
     background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
@@ -165,12 +149,11 @@ nav a:hover {
 }
 
 .profile-image img {
-    width: 230px;
-    height: 230px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 4px solid var(--accent-color);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; /* Membuat foto berbentuk lingkaran */
+    object-fit: cover;   
+    border: 4px solid #0d9488;
 }
 
 .profile-details {
@@ -211,9 +194,6 @@ nav a:hover {
     gap: 15px;
 }
 
-/* ==========================================================================
-   BUTTONS & CARDS
-   ========================================================================== */
 .btn {
     padding: 10px 22px;
     border-radius: 6px;
@@ -262,9 +242,6 @@ nav a:hover {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
 }
 
-/* ==========================================================================
-   TIMELINE (EXPERIENCE & EDUCATION)
-   ========================================================================== */
 .timeline {
     position: relative;
     border-left: 2px solid var(--border-color);
@@ -321,9 +298,6 @@ nav a:hover {
     top: -2px;
 }
 
-/* ==========================================================================
-   SKILLS & TAGS
-   ========================================================================== */
 .skill-tags {
     display: flex;
     flex-wrap: wrap;
@@ -354,10 +328,6 @@ nav a:hover {
     color: var(--accent-color);
     margin-bottom: 12px;
 }
-
-/* ==========================================================================
-   ACHIEVEMENTS
-   ========================================================================== */
 .achievement-item {
     display: flex;
     align-items: center;
@@ -369,9 +339,6 @@ nav a:hover {
     color: #eab308; /* Gold color */
 }
 
-/* ==========================================================================
-   SECTION 4: CONTACT & FORM
-   ========================================================================== */
 .contact-info {
     margin: 20px 0;
 }
@@ -439,9 +406,6 @@ nav a:hover {
     border-color: var(--accent-color);
 }
 
-/* ==========================================================================
-   FOOTER
-   ========================================================================== */
 footer {
     background-color: var(--primary-color);
     color: #94a3b8;
@@ -449,9 +413,6 @@ footer {
     font-size: 0.85rem;
 }
 
-/* ==========================================================================
-   RESPONSIVE DESIGN
-   ========================================================================== */
 @media (max-width: 768px) {
     .profile-container {
         flex-direction: column;
